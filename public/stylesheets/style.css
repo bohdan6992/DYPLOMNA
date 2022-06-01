@@ -1,0 +1,456 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #00b7ff;
+}
+div {
+  font-size: 20px;
+}
+.create {
+  display: flex;
+  align-content: center;
+  margin-left: 100px;
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+.column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+button {
+  width: 150px;
+  height: 40px;
+  font-size: 24px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn {
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 5px 25px;
+  overflow: hidden;
+  transition: 1s all ease;
+  text-align: center;
+}
+.btn::before {
+  background: lightgray;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.btn3::before {
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn3:hover::before {
+  height: 380%;
+}
+.user {
+  border: 2px solid gray;
+  width: 810px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+}
+.create-st {
+  display: flex;
+  align-content: center;
+  margin-left: 5px;
+}
+.delete {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("https://i.stack.imgur.com/cLnMQ.png") no-repeat center center /
+    contain;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.name {
+  font-weight: bold;
+  width: 300px;
+}
+.gender {
+  font-weight: normal;
+  font-style: italic;
+}
+.class {
+  font-weight: normal;
+  font-style: italic;
+}
+input {
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+  margin-top: 5px;
+}
+select {
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 208px;
+  height: 31px;
+  margin-top: 5px;
+}
+.btn-back {
+  margin-top: 10px;
+}
+.bold {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.answer {
+  border-radius: 5px;
+  text-align: center;
+  width: 290px;
+  height: 60px;
+  position: absolute;
+  top: 475px;
+  left: 55px;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: none;
+}
+.answer-med {
+  border: 2px solid red;
+  border-radius: 5px;
+  text-align: center;
+  width: 290px;
+  height: 60px;
+  position: absolute;
+  top: 230px;
+  left: -15px;
+  margin-top: 20px;
+  margin-left: 100px;
+  padding-top: 40px;
+  display: none;
+}
+.family {
+  margin-top: 15px;
+  padding: 10px;
+  position: absolute;
+  top: 237px;
+  left: 513px;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 410px;
+  height: 455px;
+}
+.family-2 {
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 410px;
+  height: 455px;
+}
+.bold {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.family td {
+  width: 155px;
+}
+.classAll {
+  margin-top: 550px;
+  margin-left: 800px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.education-class {
+  border: 2px solid gray;
+  width: 810px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px 10px 50px;
+  margin-top: 10px;
+}
+
+
+
+
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #00b7ff;
+}
+div {
+  font-size: 20px;
+}
+.create {
+  display: flex;
+  align-content: center;
+  margin-left: 100px;
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+.column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+button {
+  width: 150px;
+  height: 40px;
+  font-size: 24px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn {
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 5px 25px;
+  overflow: hidden;
+  transition: 1s all ease;
+  text-align: center;
+}
+.btn::before {
+  background: lightgray;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.btn3::before {
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn3:hover::before {
+  height: 380%;
+}
+.answer-mark{
+  margin: 20px 0;
+  height: 30px;
+}
+.user {
+  border: 2px solid gray;
+  width: 810px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+}
+.create-st {
+  display: flex;
+  align-content: center;
+  margin-left: 5px;
+}
+.delete {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("https://i.stack.imgur.com/cLnMQ.png") no-repeat center center /
+    contain;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.name {
+  font-weight: bold;
+  width: 300px;
+}
+.gender {
+  font-weight: normal;
+  font-style: italic;
+}
+.class {
+  font-weight: normal;
+  font-style: italic;
+}
+input {
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+  margin-top: 5px;
+}
+select {
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 208px;
+  height: 31px;
+  margin-top: 5px;
+}
+.btn-back {
+  margin-top: 10px;
+}
+.bold {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.answer {
+  border: 2px solid red;
+  border-radius: 5px;
+  text-align: center;
+  width: 290px;
+  height: 60px;
+  position: absolute;
+  top: 475px;
+  left: 55px;
+  margin-top: 20px;
+  margin-left: 100px;
+  padding-top: 40px;
+  display: none;
+}
+.answer-med {
+  border: 2px solid red;
+  border-radius: 5px;
+  text-align: center;
+  width: 290px;
+  height: 60px;
+  position: absolute;
+  top: 230px;
+  left: -15px;
+  margin-top: 20px;
+  margin-left: 100px;
+  padding-top: 40px;
+  display: none;
+}
+.family {
+  margin-top: 15px;
+  padding: 10px;
+  position: absolute;
+  top: 237px;
+  left: 513px;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 410px;
+  height: 455px;
+}
+.family-2 {
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 410px;
+  height: 455px;
+}
+.bold {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.family td {
+  width: 155px;
+}
+.classAll {
+  margin-top: 550px;
+  margin-left: 800px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.education-class {
+  border: 2px solid gray;
+  width: 810px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px 10px 50px;
+  margin-top: 10px;
+}
+.add-marks {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+  margin-left: 26px;
+}
+.list-marks {
+  width: 40px;
+  height: 40px;
+  border: 2px solid gray;
+  margin: 20px 10px;
+}
+.bubble {
+  background: rgb(0, 55, 255);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+.form-registration {
+  margin: 0 auto;
+  width: 360px;
+  height: 360px;
+  border: 2px solid gray;
+  border-radius: 5px;
+
+}
+.answer-reg {
+  margin: 0 auto;
+  border: 2px solid red;
+  border-radius: 5px;
+  text-align: center;
+  width: 290px;
+  height: 60px;
+  padding-top: 40px;
+  display: none;
+}
+.input-reg {
+  margin: 20px 0px 20px 75px;
+}
+.button-reg {
+  margin: 40px 0px 0px 50px;
+}
+.reg {
+text-align: center;
+}
+.button-click button-reg {
+  width: 300px;
+}
+.form {
+  margin-top: 200px;
+}
+.mark{
+  margin: 15px;
+  border-spacing: 0px;
+  font-size: 36px;
+}
+.mark td {
+  border: 1px solid black;
+  padding: 5px;
+}
+.mark-inp{
+  display: flex;
+  justify-content: space-between;
+}

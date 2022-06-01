@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>class</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <div>
+      <table>
+        <tr class="education-class">
+          <td><a href="/class/math">Math</a></td>
+          <td><%= classMath %></td>
+        </tr>
+        <tr class="education-class">
+          <td><a href="/class/filology">Filology</a></td>
+          <td><%= classFilology %></td>
+        </tr>
+        <tr class="education-class">
+          <td><a href="/class/nature">Nature</a></td>
+          <td><%= classNature %></td>
+        </tr>
+      </table>
+    </div>
+    <div class="classAll">
+      <p>Students count: <%= classAll %> </p>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

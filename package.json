@@ -1,0 +1,37 @@
+{
+  "name": "baseexpressapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "prettier": "npx prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-validator": "^6.14.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.5",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.14",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "prettier": "2.4.1"
+  }
+}

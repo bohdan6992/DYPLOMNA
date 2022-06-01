@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>classCreate</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <% studentsList.forEach(student => {%>
+          <div class="user">
+            <div class="name">
+              <a href="/class/student/<%= student._id %>"><%= student.name %> <%= student.surname %>  </a>
+              
+            </div>
+            <div>
+              <%= student.classNumber %>
+            </div>
+          </div> 
+          <%})%>
+        </td>
+      </tr>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

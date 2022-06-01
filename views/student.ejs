@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <form>
+      <div class="answer-med"></div>
+
+      <div class="family-2">
+        <div class="create-st">
+          <table>
+            <tr>
+              <td>name:</td>
+              <td><%= student.name %></td>
+            </tr>
+            <tr>
+              <td>surname:</td>
+              <td><%= student.surname %></td>
+            </tr>
+            <tr>
+              <td>gender:</td>
+              <td><%= student.gender %></td>
+            </tr>
+            <tr>
+              <td>birthDate:</td>
+              <td><%= student.birthDate %></td>
+            </tr>
+            <tr>
+              <td>age:</td>
+              <td><%= student.age %></td>
+            </tr>
+            <tr>
+              <td>adress:</td>
+              <td><%= student.adress %></td>
+            </tr>
+            <tr>
+              <td class="bold">Father</td>
+            </tr>
+            <tr>  
+              <td>name:</td>
+              <td><%= student.family.father.name %></td>
+            </tr>
+            <tr>
+              <td>surname:</td>
+              <td><%= student.family.father.surname %></td>
+            </tr>
+            <tr>
+              <td>number:</td>
+              <td><%= student.family.father.number %></td>
+            </tr>
+            <tr>
+              <td class="bold">Mother</td>
+            </tr>
+            <tr>  
+              <td>name:</td>
+              <td><%= student.family.mother.name %></td>
+            </tr>
+            <tr>
+              <td>surname:</td>
+              <td><%= student.family.mother.surname %></td>
+            </tr>
+            <tr>
+              <td>number:</td>
+              <td><%= student.family.mother.number %></td>
+            </tr>
+            <tr>
+              <td>class:</td>
+              <td><%= student.class %></td>
+            </tr>
+            <tr>
+              <td>class number:</td>
+              <td><%= student.classNumber %></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <% if (marksTable) { %>
+        <table class="mark">
+          <tr>
+            <%- marksTable %>
+          </tr>
+        </table>
+      <% } %>
+
+      <div class="answer-mark"></div>
+      <div class="add-marks">
+        <div class="mark-inp">
+          <input type="range" name="mark" min="1" max="5" value="1" step="1" class="range">
+          <output class="bubble"></output>
+        </div>
+        <div class="button">
+          <div>
+            <a href="/class/student/<%= student._id %>">
+              <button class="button-click" type="submit" >Add</button>
+            </a><br>
+            <div class="btn-back">
+              <a href="/class/<%= student.class %>" class="btn btn3">Back</a>
+          </div>
+          </div>         
+        </div>
+      </div>
+
+
+    </form>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+    <script src="/js/student.js"></script>
+  </body>
+</html>

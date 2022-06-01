@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <form>
+      <div class="create-st">
+        <table>
+          <tr>
+            <td>name:</td>
+            <td><input type="text" name="name" value="<%= student.name %>" required></td>
+          </tr>
+          <tr>
+            <td>surname:</td>
+            <td><input type="text" name="surname" value="<%= student.surname %>" required></td>
+          </tr>
+          <tr>
+            <td>gender:</td>
+            <td>
+              <select name="gender">
+              <option value="<%= student.gender %>"><%= student.gender %></option>
+              <% if (student.gender === 'Male') { %>
+                <option value="Female">Female</option>
+              <% } else { %>
+              <option value="Male">Male</option>
+              <% } %>
+            </select>
+          </td>
+          </tr>
+          <tr>
+            <td>birthDate:</td>
+            <td><input type="date" name="birthDate" value="<%= student.birthDate %>"></td>
+          </tr>
+          <tr>
+            <td>age:</td>
+            <td><input type="number" name="age" value="<%= student.age %>"></td>
+          </tr>
+          <tr>
+            <td>adress:</td>
+            <td> <input type="text" name="adress" value="<%= student.adress %>"></td>
+          </tr>
+          <tr>
+            <td>father:</td>
+            <td><input type="text" name="fatherName" value="<%= student.family.father.name %>"></td>
+            <td><input type="text" name="fatherSurname" value="<%= student.family.father.surname %>"></td>
+            <td><input type="text" name="fatherNumber" value="<%= student.family.father.number %>"></td>
+          </tr>
+          <tr>
+            <td>mother:</td>
+            <td><input type="text" name="motherName" value="<%= student.family.mother.name %>"></td>
+            <td><input type="text" name="motherSurname" value="<%= student.family.mother.surname %>"></td>
+            <td><input type="text" name="motherNumber" value="<%= student.family.mother.number %>"></td>
+          </tr>
+          <tr>
+            <td>class:</td>
+            <td>
+              <select name="class">
+                <option value="<%= student.class %>"><%= student.class %></option>
+              <% if (student.class) { %>
+                <option value="Math">Math</option>
+                <option value="Filology">Filology</option>
+                <option value="Nature">Nature</option> 
+              <% } %>
+              <% if (student.class === undefined) { %>
+                <option></option>
+                <option value="Math">Math</option>
+                <option value="Filology">Filology</option>
+                <option value="Nature">Nature</option> 
+              <% } %>     
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>class number:</td>
+            <td><input type="text" name="classNumber" value="<%= student.classNumber %>"></td>
+          </tr>
+        </table>
+        <div class="button">
+          <div class="btn-ok">
+            <a href="/admin/update">
+              <button class="button-click" type="submit" >OK</button>
+            </a><br>
+            <div class="btn-back">
+              <a href="/admin" class="btn btn3">Back</a>
+          </div>
+          </div>         
+        </div>
+      </div>
+      <div class="answer"></div>
+      
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+    <script src="/js/users.js"></script>
+  </body>
+</html>
